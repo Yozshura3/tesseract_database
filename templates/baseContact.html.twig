@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <title>{% block title %}T E S S E R A C T{% endblock %}</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="https://static.spacecrafted.com/dde3f2e58e1549e28bc519a12700d8e5/i/d8dc339e02f9495b83d575e6b7822ca2/1/GCuCv726gZycFxatR9d99n/TESS-header.png" width="600px" alt="">
+    </div>
+    <nav>
+        <p>Origine</p>
+        <a href="{{ path('discographie') }}"><p>Discographie</p></a>
+        <p>Galerie</p>
+        <a href="{{ path('profil') }}"><p>Profil</p></a>
+        <a href="{{ path('contact') }}"><p>Contact</p></a>
+    </nav>
+</header>
+<div class="container">
+    <aside>
+        <div class="backaside"></div>
+    </aside>
+
+    {% block section %}
+
+    {% endblock %}
+</div>
+
+
+</body>
+
+<footer>
+    <div class="reseau">
+        <div>
+            <img width="100px" src="https://i.pinimg.com/originals/ce/c8/a6/cec8a6239de29acbfcfee0ccec995b9f.png" alt="">
+        </div>
+
+        <div>
+            <img width="80px" src="https://images.vexels.com/media/users/3/141370/isolated/preview/73211069a13c828088c2e85b2569e787-twitter-distorted-round-icon-by-vexels.png" alt="">
+        </div>
+
+        <div>
+            <img width="130px" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Instagram_Icon.png" alt="">
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

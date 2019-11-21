@@ -1,0 +1,22 @@
+{% extends('baseContact.html.twig') %}
+
+{% block title %}
+    Contact
+{% endblock %}
+
+
+{% block section %}
+    <div class="contact">
+        <div class="contactback">
+            <h1>CONTACT</h1>
+            <p>Nom:</p>
+            <p>Prénom:</p>
+            <p>E-mail:</p>
+            <div class="ok">
+                <a href="{{ path('profil') }}">Envoyer!</a>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends('base.html.twig') %}
+
+{% block section %}
+<section>
+
+        {% for article in articles %}
+
+            <div class="imgarticle">
+                <h3>{{ article.title }}</h3>
+                <a href=""><img class="resp" src="{{ article.cover }}" alt=""></a>
+            </div>
+        {% endfor %}
+</section>
+{% endblock %}
